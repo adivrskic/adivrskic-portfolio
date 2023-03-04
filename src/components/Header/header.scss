@@ -1,0 +1,63 @@
+@import "../../styles/colors";
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  color: darken($text, 33%);
+  transition: all 0.33s cubic-bezier(0.83, 0, 0.17, 1);
+  max-width: 1400px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  &--hidden {
+    transform: translateY(-100px);
+  }
+
+  & a {
+    color: darken($text, 33%);
+  }
+
+  &:hover,
+  &:hover a {
+    color: $text;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    transform: translateY(-100px);
+    animation: slideDownHeader 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    animation-delay: 1s;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all 0.33s cubic-bezier(0.83, 0, 0.17, 1);
+  }
+
+  &__external {
+    display: flex;
+    gap: 40px;
+    transform: translateY(-100px);
+    animation: slideDownHeader 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes slideDownHeader {
+  33% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

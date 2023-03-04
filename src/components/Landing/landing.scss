@@ -1,0 +1,109 @@
+@import "../../styles/colors";
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  &__header {
+    opacity: 0;
+    transform: translateY(-30px);
+    margin: 0;
+    font-size: 64px;
+    letter-spacing: 8px;
+    animation: slideDownHeaderText 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    animation-delay: 1s;
+  }
+
+  &__subheader {
+    transform: translateY(-30px);
+    opacity: 0;
+    margin: 0 0 60px 0;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: darken($text, 33%);
+    text-align: center;
+    animation: slideDownHeaderText 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    animation-delay: 0.9s;
+  }
+
+  &__button {
+    //pre-animation
+    transform: translateY(-150px) scale(0, 0);
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    animation: slideDownButton 1.6s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    text-decoration: none;
+    transition: all 1s cubic-bezier(0.83, 0, 0.17, 1);
+
+    &:hover {
+      background-color: #fff;
+      color: $background;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .landing {
+    &__header {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing {
+    &__header {
+      font-size: 36px;
+    }
+
+    &__subheader {
+      font-size: 12px;
+    }
+  }
+}
+
+@keyframes slideDownHeaderText {
+  33% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownButton {
+  50% {
+    transform: translateY(0) scale(0.1, 0.1);
+  }
+
+  67% {
+    transform: translateY(0) scale(1, 0.1);
+  }
+
+  // 75% {
+  //   transform: translateY(0) scale(1, 0.1);
+  // }
+
+  85% {
+    background-color: $text;
+    color: transparent;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    background-color: transparent;
+    color: #fff;
+  }
+}
