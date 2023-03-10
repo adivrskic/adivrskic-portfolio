@@ -44,6 +44,7 @@ const Contact = () => {
             value={formMessage}
             onChange={(e) => onFormChange(e, "message")}
             className="contact__form-textarea"
+            rows="8"
           ></textarea>
           <button
             type="submit"
