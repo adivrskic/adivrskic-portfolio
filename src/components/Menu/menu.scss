@@ -12,12 +12,11 @@
   visibility: hidden;
 
   &--open {
-    animation: showMenu 0.8s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    animation: showMenu 0.67s cubic-bezier(0.83, 0, 0.17, 1) forwards;
   }
 
   &--close {
-    // animation: hideMenu 0.67s ease-in-out forwards;
-    // animation-delay: 1s;
+    // animation: hideMenu 0.67s cubic-bezier(0.83, 0, 0.17, 1) forwards;
   }
 
   &__items {
@@ -33,15 +32,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $background;
     text-decoration: none;
-    filter: grayscale(1) brightness(0.4);
-    transition: all 0.25s ease-in-out;
+    filter: brightness(0.7);
+    transition: all 0.67s cubic-bezier(0.83, 0, 0.17, 1);
     opacity: 0;
     transform: translateY(60px);
 
     &:hover {
-      filter: grayscale(1) brightness(0.8);
+      filter: brightness(1.1);
     }
 
     &-header {
@@ -49,7 +47,7 @@
       font-size: 16px;
       letter-spacing: 4px;
       transform: translateY(10px);
-      transition: all 0.25s cubic-bezier(0.83, 0, 0.17, 1);
+      transition: all 0.67s cubic-bezier(0.83, 0, 0.17, 1);
       position: relative;
       z-index: 2;
 
@@ -64,8 +62,8 @@
         transform-origin: center center;
         transform: translate(-50%, -50%);
         background-color: #fff;
-        transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
-        transition-delay: 0.25s;
+        transition: all 0.67s cubic-bezier(0.83, 0, 0.17, 1);
+        transition-delay: 0.2s;
       }
     }
 
@@ -98,7 +96,7 @@
 
 .menu--close .menu__item {
   animation: hideMenuItems 1s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-  // animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @for $i from 1 through 4 {
@@ -136,6 +134,7 @@
 @keyframes hideMenu {
   0% {
     visibility: visible;
+    opacity: 1;
   }
   99% {
     visibility: visible;

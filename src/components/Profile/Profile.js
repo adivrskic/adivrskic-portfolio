@@ -4,6 +4,10 @@ import "./profile.scss";
 const Profile = () => {
   return (
     <section id="profile" className="profile">
+      <div
+        className="profile__background"
+        style={{ backgroundImage: `url("/images/profile.webp")` }}
+      ></div>
       <div className="profile__container">
         <h2 className="profile__header">
           Software Engineer & eCommerce Expert
@@ -17,11 +21,11 @@ const Profile = () => {
         </p>
       </div>
 
-      <img
+      {/* <img
         className="profile__image"
         src="/images/profile-nobg.png"
         alt="Adi Vrskic"
-      />
+      /> */}
     </section>
   );
 };

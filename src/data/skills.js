@@ -20,6 +20,7 @@ import { SiCsharp, SiNetlify } from "react-icons/si";
 
 export const skills = [
   {
+    id: 1,
     icon: <DiHtml5 />,
     displayText: "HTML5",
     displaySubtext:
@@ -27,6 +28,7 @@ export const skills = [
     bg: "#DD4B25",
   },
   {
+    id: 2,
     icon: <DiCss3 />,
     displayText: "CSS3",
     displaySubtext:
@@ -34,6 +36,7 @@ export const skills = [
     bg: "#254BDD",
   },
   {
+    id: 3,
     icon: <DiSass />,
     displayText: "Sass",
     displaySubtext:
@@ -41,6 +44,7 @@ export const skills = [
     bg: "#C76494",
   },
   {
+    id: 4,
     icon: <DiJsBadge />,
     displayText: "Javascript",
     displaySubtext:
@@ -48,6 +52,7 @@ export const skills = [
     bg: "#EDD718",
   },
   {
+    id: 5,
     icon: <DiJqueryLogo />,
     displayText: "JQuery",
     displaySubtext:
@@ -55,6 +60,7 @@ export const skills = [
     bg: "#1064A5",
   },
   {
+    id: 6,
     icon: <DiReact />,
     displayText: "React",
     displaySubtext:
@@ -62,12 +68,14 @@ export const skills = [
     bg: "#5CCFEE",
   },
   {
+    id: 7,
     icon: <TbBrandNextjs />,
     displayText: "NextJS",
     displaySubtext: "Created full-stack web and eCommerce applications.",
     bg: "#000000",
   },
   {
+    id: 8,
     icon: <DiAngularSimple />,
     displayText: "Angular",
     displaySubtext:
@@ -75,36 +83,42 @@ export const skills = [
     bg: "#D2002F",
   },
   {
+    id: 9,
     icon: <DiPython />,
     displayText: "Python",
     displaySubtext: "Constructed APIs. My ideal backend development language.",
     bg: "#346998",
   },
   {
+    id: 10,
     icon: <DiNodejsSmall />,
     displayText: "Node JS",
     displaySubtext: "Created API to fetch github information from.",
     bg: "#89BB3C",
   },
   {
+    id: 11,
     icon: <DiDatabase />,
     displayText: "Databases",
     displaySubtext: "SQL, Firebase, GQL & Microsoft Azure Cosmos DB.",
     bg: "#057DDC",
   },
   {
+    id: 12,
     icon: <DiUnitySmall />,
     displayText: "Unity",
     displaySubtext: "Comfortable working on and creating 2D and 3D games.",
     bg: "#797979",
   },
   {
+    id: 13,
     icon: <SiCsharp />,
     displayText: "C#",
     displaySubtext: "Used primarily for game dev on Unity.",
     bg: "#9870CF",
   },
   {
+    id: 14,
     icon: <DiGoogleAnalytics />,
     displayText: "Google Analytics",
     displaySubtext:
@@ -112,6 +126,7 @@ export const skills = [
     bg: "#F2BB16",
   },
   {
+    id: 15,
     icon: <DiHeroku />,
     displayText: "Heroku",
     displaySubtext:
@@ -119,6 +134,7 @@ export const skills = [
     bg: "#6111A7",
   },
   {
+    id: 16,
     icon: <SiNetlify />,
     displayText: "Netlify",
     displaySubtext:

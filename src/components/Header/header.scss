@@ -33,10 +33,10 @@
     align-items: center;
     transform: translateY(-100px);
     animation: slideDownHeader 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    animation-delay: 1s;
+    // animation-delay: 1s;
   }
 
-  &__icon {
+  svg {
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -48,7 +48,7 @@
     gap: 40px;
     transform: translateY(-100px);
     animation: slideDownHeader 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    animation-delay: 1s;
+    // animation-delay: 1s;
   }
 }
 

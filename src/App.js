@@ -35,9 +35,7 @@ function App() {
 
           <Skills />
 
-          <Container>
-            <Contact />
-          </Container>
+          <Contact />
 
           <Menu />
         </>

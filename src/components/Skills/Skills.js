@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       {skills.map((skill) => (
-        <div className="skills__item" style={{ backgroundColor: skill.bg }}>
+        <div key={skill.id} className="skills__item">
           {skill.icon}
 
           <h3 className="skills__item-header">{skill.displayText}</h3>

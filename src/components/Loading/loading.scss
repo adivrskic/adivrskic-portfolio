@@ -21,35 +21,35 @@
     height: calc(100% - 80px);
     width: calc(100% - 80px);
     z-index: -1;
-    animation: slideDown 1.4s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    animation: slideDown 1.67s cubic-bezier(0.83, 0, 0.17, 1) forwards;
     animation-delay: 0.7s;
   }
 
   &__header {
     font-size: 64px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0 0 20px 0;
     letter-spacing: 8px;
     opacity: 1;
     animation: textSlideDown 1s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    animation-delay: 2.4s;
+    animation-delay: 2.47s;
   }
 
   &__subheader {
-    font-size: 16px;
-    letter-spacing: 4px;
+    font-size: 14px;
+    letter-spacing: 3px;
     color: darken($text, 50%);
     margin: 0;
     opacity: 1;
     animation: textSlideDown 1s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    animation-delay: 2.3s;
+    animation-delay: 2.37s;
   }
 
   &__separator {
     display: inline-flex;
     width: 1px;
     height: 18px;
-    margin: 0 6px;
+    margin: 0 20px;
     transform: translateY(4px);
     background-color: darken($text, 50%);
   }

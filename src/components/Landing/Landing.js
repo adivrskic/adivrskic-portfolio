@@ -8,9 +8,11 @@ const Landing = () => {
       <p className="landing__subheader">
         Innovating eCommerce with React, Shopify, and Squarespace
       </p>
-      <a href="#work" className="landing__button">
-        Browse Projects
-      </a>
+      <div className="landing__button-container">
+        <a href="#work" className="landing__button">
+          Browse Projects
+        </a>
+      </div>
     </section>
   );
 };

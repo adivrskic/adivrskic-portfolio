@@ -1,9 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.scss";
 const Contact = () => {
+  const [formName, setFormName] = useState("");
+  const [formEmail, setFormEmail] = useState("");
+  const [formMessage, setFormMessage] = useState("");
+
+  const onFormChange = (e, el) => {
+    if (el === "name") {
+      setFormName(e.target.value);
+    } else if (el === "email") {
+      setFormEmail(e.target.value);
+    } else if (el === "message") {
+      setFormMessage(e.target.value);
+    }
+  };
+
+  const onFormSubmit = () => {};
+
   return (
     <section id="contact" className="contact">
-      Contact
+      <div
+        className="contact__background"
+        style={{ backgroundImage: `url("/images/contact.webp")` }}
+      ></div>
+      <div className="contact__container">
+        <form className="contact__form">
+          <label className="contact__form-label">Name</label>
+          <input
+            type="text"
+            value={formName}
+            onChange={(e) => onFormChange(e, "name")}
+            className="contact__form-input"
+          />
+          <label className="contact__form-label">Email</label>
+          <input
+            type="email"
+            value={formEmail}
+            onChange={(e) => onFormChange(e, "email")}
+            className="contact__form-input"
+          />
+          <label className="contact__form-label">Message</label>
+          <textarea
+            value={formMessage}
+            onChange={(e) => onFormChange(e, "message")}
+            className="contact__form-textarea"
+          ></textarea>
+          <button
+            type="submit"
+            className="contact__form-submit"
+            onClick={() => onFormSubmit()}
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
   );
 };
