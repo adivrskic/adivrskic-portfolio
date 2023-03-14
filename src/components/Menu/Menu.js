@@ -6,9 +6,7 @@ import { StateContext } from "../../context/StateProvider";
 const Menu = () => {
   const [{ showMenu }, dispatch] = useContext(StateContext);
 
-  const onMenuClick = (e, menuItem) => {
-    e.stopPropagation();
-
+  const onMenuClick = () => {
     dispatch({ type: "TOGGLE_MENU" });
   };
 
@@ -19,8 +17,6 @@ const Menu = () => {
       document.body.style.overflow = "";
     }
   }, [showMenu]);
-
-  console.log(showMenu);
 
   return (
     <section

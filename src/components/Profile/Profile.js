@@ -20,12 +20,6 @@ const Profile = () => {
           development frameworks and libraries, especially React.
         </p>
       </div>
-
-      {/* <img
-        className="profile__image"
-        src="/images/profile-nobg.png"
-        alt="Adi Vrskic"
-      /> */}
     </section>
   );
 };

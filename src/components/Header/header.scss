@@ -1,4 +1,6 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
+@import "../../styles/animations";
 
 .header {
   position: fixed;
@@ -7,7 +9,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  color: darken($text, 33%);
   transition: all 0.33s cubic-bezier(0.83, 0, 0.17, 1);
   max-width: 1400px;
   margin: 0 auto;
@@ -19,13 +20,8 @@
     transform: translateY(-100px);
   }
 
-  & a {
-    color: darken($text, 33%);
-  }
-
-  &:hover,
-  &:hover a {
-    color: $text;
+  &:hover svg {
+    opacity: 1;
   }
 
   &__menu {
@@ -33,14 +29,14 @@
     align-items: center;
     transform: translateY(-100px);
     animation: slideDownHeader 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    // animation-delay: 1s;
   }
 
   svg {
     width: 32px;
     height: 32px;
     cursor: pointer;
-    transition: all 0.33s cubic-bezier(0.83, 0, 0.17, 1);
+    opacity: 0.67;
+    transition: all 0.67s cubic-bezier(0.83, 0, 0.17, 1);
   }
 
   &__external {
@@ -48,7 +44,6 @@
     gap: 40px;
     transform: translateY(-100px);
     animation: slideDownHeader 1.2s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-    // animation-delay: 1s;
   }
 }
 
@@ -58,6 +53,6 @@
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0.85;
   }
 }

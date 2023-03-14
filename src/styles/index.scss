@@ -41,6 +41,13 @@ body {
   display: none;
 }
 
+::selection {
+  background: darken($background, 2.5%); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: darken($background, 2.5%); /* WebKit/Blink Browsers */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

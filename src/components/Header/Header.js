@@ -11,6 +11,8 @@ import { StateContext } from "../../context/StateProvider";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
+
+  // eslint-disable-next-line no-empty-pattern
   const [{}, dispatch] = useContext(StateContext);
 
   return (
@@ -24,13 +26,26 @@ const Header = () => {
         <IoFingerPrintSharp className="header__icon header__icon--menu" />
       </div>
       <div className="header__external">
-        <a href="https://github.com/adivrskic">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/adivrskic"
+        >
           <IoLogoGithub className="header__icon" />
         </a>
-        <a href="https://www.linkedin.com/in/adi-vrskic-48758213b/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/adi-vrskic-48758213b/"
+        >
           <IoLogoLinkedin className="header__icon" />
         </a>
-        <a href="/assets/AdiVrskicResume.pdf" download>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="/assets/AdiVrskicResume.pdf"
+          download
+        >
           <IoDocumentTextSharp className="header__icon" />
         </a>
       </div>

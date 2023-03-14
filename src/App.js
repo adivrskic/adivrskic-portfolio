@@ -27,7 +27,9 @@ function App() {
             <Landing />
           </Container>
 
-          <Profile />
+          <Container hasInner>
+            <Profile />
+          </Container>
 
           <Container>
             <Work />
@@ -35,7 +37,9 @@ function App() {
 
           <Skills />
 
-          <Contact />
+          <Container hasInner>
+            <Contact />
+          </Container>
 
           <Menu />
         </>
